@@ -1,6 +1,6 @@
 public class ArrayClass {
     int[] ar = new int[5];                      //declare array
-    int[] arr = {10,20,30,40,50,60};            //declaring array using alternate method
+    int[] arr = {10,20,30,40,50,40};            //declaring array using alternate method
     //traverse function
     public void traverseFunction(){
         for(int i =0; i<arr.length;i++){
@@ -15,12 +15,21 @@ public class ArrayClass {
             }
         }
     }
+    //searching function
+    public void searchFunction(int searchItem){
+        for(int i =0; i<arr.length;i++){
+            if(arr[i]==searchItem){
+                System.out.println("Element found at "+i+" index");
+            }
+        }
+    }
     public static void main(String[] args) {
         ArrayClass arrobj = new ArrayClass();
-        System.out.println("Array before insertion is----");
+        /*System.out.println("Array before insertion is----");
         arrobj.traverseFunction();
         System.out.println("Array after insertion is----");
         arrobj.insertFunction(80,40);
-        arrobj.traverseFunction();
+        arrobj.traverseFunction();*/
+        arrobj.searchFunction(40);
     }
 }
