@@ -1,13 +1,26 @@
 public class ArrayClass {
     int[] ar = new int[5];                      //declare array
     int[] arr = {10,20,30,40,50,60};            //declaring array using alternate method
-    public void traverse(){
+    //traverse function
+    public void traverseFunction(){
         for(int i =0; i<arr.length;i++){
             System.out.println("Element at index "+i+" is "+arr[i]);
         }
     }
+    //insert function
+    public void insertFunction(int item, int match){
+        for(int i =0; i<arr.length;i++){
+            if(arr[i]==match){
+                arr[i]=item;
+            }
+        }
+    }
     public static void main(String[] args) {
         ArrayClass arrobj = new ArrayClass();
-        arrobj.traverse();
+        System.out.println("Array before insertion is----");
+        arrobj.traverseFunction();
+        System.out.println("Array after insertion is----");
+        arrobj.insertFunction(80,40);
+        arrobj.traverseFunction();
     }
 }
