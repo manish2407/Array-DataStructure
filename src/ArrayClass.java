@@ -24,6 +24,7 @@ public class ArrayClass {
     }
     //insert function
     public void insertFunction(int insertItem, int position){
+        int[] newArray = new  int[arr.length+1];
         for(int i =0; i<arr.length;i++){
             if(i==position){
                 arr[i]=insertItem;
@@ -33,12 +34,15 @@ public class ArrayClass {
     public static void main(String[] args) {
         ArrayClass arrobj = new ArrayClass();
         /*System.out.println("Array before insertion is----");
-        arrobj.traverseFunction();
-        System.out.println("Array after insertion is----");
+        arrobj.traverseFunction();*/
+
+        /*System.out.println("Array after insertion is----");
         arrobj.updateFunction(80,40);
         arrobj.traverseFunction();*/
+
         //arrobj.searchFunction(40);
-        //inserting element in array
+
+        /*inserting element in array
         int[] ar = new int[5];                      //declare array
         ar[0]=77;
         ar[1]=78;
@@ -47,7 +51,7 @@ public class ArrayClass {
         ar[4]=81;
         for(int i =0; i<ar.length;i++){
             System.out.println("Element at index "+i+" is "+ar[i]);
-            }
-        }
+        }*/
     }
+}
 
