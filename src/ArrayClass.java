@@ -7,8 +7,8 @@ public class ArrayClass {
             System.out.println("Element at index "+i+" is "+arr[i]);
         }
     }
-    //insert function
-    public void insertFunction(int item, int match){
+    //update function
+    public void updateFunction(int item, int match){
         for(int i =0; i<arr.length;i++){
             if(arr[i]==match){
                 arr[i]=item;
@@ -29,7 +29,7 @@ public class ArrayClass {
         /*System.out.println("Array before insertion is----");
         arrobj.traverseFunction();
         System.out.println("Array after insertion is----");
-        arrobj.insertFunction(80,40);
+        arrobj.updateFunction(80,40);
         arrobj.traverseFunction();*/
         arrobj.searchFunction(40);
     }
