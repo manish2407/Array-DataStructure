@@ -1,5 +1,4 @@
 public class ArrayClass {
-    int[] ar = new int[5];                      //declare array
     int[] arr = {10,20,30,40,50,40};            //declaring array using alternate method
     //traverse function
     public void traverseFunction(){
@@ -23,7 +22,14 @@ public class ArrayClass {
             }
         }
     }
-    //
+    //insert function
+    public void insertFunction(int insertItem, int position){
+        for(int i =0; i<arr.length;i++){
+            if(i==position){
+                arr[i]=insertItem;
+            }
+        }
+    }
     public static void main(String[] args) {
         ArrayClass arrobj = new ArrayClass();
         /*System.out.println("Array before insertion is----");
@@ -31,6 +37,17 @@ public class ArrayClass {
         System.out.println("Array after insertion is----");
         arrobj.updateFunction(80,40);
         arrobj.traverseFunction();*/
-        arrobj.searchFunction(40);
+        //arrobj.searchFunction(40);
+        //inserting element in array
+        int[] ar = new int[5];                      //declare array
+        ar[0]=77;
+        ar[1]=78;
+        ar[2]=79;
+        ar[3]=80;
+        ar[4]=81;
+        for(int i =0; i<ar.length;i++){
+            System.out.println("Element at index "+i+" is "+ar[i]);
+            }
+        }
     }
-}
+
