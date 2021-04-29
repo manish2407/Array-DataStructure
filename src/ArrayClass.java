@@ -34,9 +34,16 @@ public class ArrayClass {
         return newArray;
     }
     //delete function
+    public void DeleteFunction(int delItem) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == delItem) {
+                break;
+            }
+        }
+    }
 
-    public static void main(String[] args) {
-        ArrayClass arrobj = new ArrayClass();
+    public static void main(String args[]){
+            ArrayClass arrobj = new ArrayClass();
         /*System.out.println("Array before insertion is----");
         arrobj.traverseFunction();*/
 
@@ -44,7 +51,7 @@ public class ArrayClass {
         arrobj.updateFunction(80,40);
         arrobj.traverseFunction();*/
 
-        //arrobj.searchFunction(40);
+            //arrobj.searchFunction(40);
 
         /*inserting element in array
         int[] ar = new int[5];                      //declare array
@@ -56,7 +63,7 @@ public class ArrayClass {
         for(int i =0; i<ar.length;i++){
             System.out.println("Element at index "+i+" is "+ar[i]);
         }*/
-        arrobj.insertFunction(90,3);
+            //arrobj.insertFunction(90,3);
     }
 }
 
