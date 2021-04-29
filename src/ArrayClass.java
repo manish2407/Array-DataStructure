@@ -23,14 +23,18 @@ public class ArrayClass {
         }
     }
     //insert function
-    public void insertFunction(int insertItem, int position){
+    public int[] insertFunction(int insertItem, int position){
         int[] newArray = new  int[arr.length+1];
         for(int i =0; i<arr.length;i++){
             if(i==position){
                 arr[i]=insertItem;
             }
+            newArray[i] = arr[i];
         }
+        return newArray;
     }
+    //delete function
+
     public static void main(String[] args) {
         ArrayClass arrobj = new ArrayClass();
         /*System.out.println("Array before insertion is----");
@@ -52,6 +56,7 @@ public class ArrayClass {
         for(int i =0; i<ar.length;i++){
             System.out.println("Element at index "+i+" is "+ar[i]);
         }*/
+        arrobj.insertFunction(90,3);
     }
 }
 
