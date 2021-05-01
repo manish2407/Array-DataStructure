@@ -1,24 +1,33 @@
 package ArrayUsingInterface;
 
 public class ArrayInterface {
-        private long[] a;                   //referance to array a
-        private int ElementCount;           //variable for ElementCount
-        public ArrayInterface(int size){    //Constructor
-            a = new long[size];
-            ElementCount = 0;
+    private long[] a;                   //referance to array a
+    private int ElementCount;           //variable for ElementCount
+
+    public ArrayInterface(int size) {    //Constructor
+        a = new long[size];
+        ElementCount = 0;
     }
+
     //find function for searching
-    public  void find(long ElementToBesearch){
+    public void find(long ElementToBesearch) {
         int j;
-        for(j=0; j<ElementCount; j++){
-            if(a[j] == ElementToBesearch){
-                System.out.println("Element "+"found at "+j+" index");
+        for (j = 0; j < ElementCount; j++) {
+            if (a[j] == ElementToBesearch) {
+                System.out.println("Element " + "found at " + j + " index");
             }
         }
-        if(j==ElementCount){
+        if (j == ElementCount) {
             System.out.println("Element not found");
         }
-
     }
 
+    public long traverse() {
+        for (int j = 0; j < ElementCount; j++) {
+            System.out.println("Element at "+j+" index is");
+            return a[j];
+        }
+
+
+    }
 }
