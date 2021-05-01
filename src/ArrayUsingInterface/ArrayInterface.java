@@ -7,5 +7,18 @@ public class ArrayInterface {
             a = new long[size];
             ElementCount = 0;
     }
+    //find function for searching
+    public  void find(long ElementToBesearch){
+        int j;
+        for(j=0; j<ElementCount; j++){
+            if(a[j] == ElementToBesearch){
+                System.out.println("Element "+"found at "+j+" index");
+            }
+        }
+        if(j==ElementCount){
+            System.out.println("Element not found");
+        }
+
+    }
 
 }
