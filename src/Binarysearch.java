@@ -1,17 +1,14 @@
 public class Binarysearch {
-    int a[]={11,22,33,44,55,66,77,88,99};
+    int[] a ={11,22,33,44,55,66,77,88,99};
     int SearchItem = 44;
 
     public void find(){
         int lowerbound = 0;
         int upperbound = a.length-1;
-        while(true) {
+        while(lowerbound < upperbound) {
             int mid = lowerbound + upperbound / 2;
             if(a[mid]==SearchItem){
-                System.out.println("Element found at "+mid+" position");
-            }
-            else if(lowerbound > upperbound){
-                System.out.println("Element not present in the given array");
+                System.out.println("Element found at "+ mid +" position");
             }
             else {
                 if(a[mid]>SearchItem){
