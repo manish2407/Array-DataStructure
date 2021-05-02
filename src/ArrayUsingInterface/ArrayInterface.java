@@ -22,9 +22,10 @@ public class ArrayInterface {
         }
     }
     //traverse function for traversing
-    public void traverse() {
-        for (int j = 0; j < ElementCount; j++) {
-            System.out.println("Element at " + j + " index is" + a[j]);
+    public void display(){
+        for(int j=0; j<ElementCount; j++){
+            System.out.print(a[j] + " ");
+            System.out.println(" ");
         }
     }
     public void delete(long value) {
