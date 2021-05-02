@@ -21,12 +21,28 @@ public class ArrayInterface {
             System.out.println("Element not found");
         }
     }
-
+    //traverse function for traversing
     public void traverse() {
         for (int j = 0; j < ElementCount; j++) {
-            System.out.println("Element at "+j+" index is"+a[j]);
+            System.out.println("Element at " + j + " index is" + a[j]);
         }
-
-
     }
+    public void delete(long value) {
+            int k;
+            for(k=0; k<ElementCount; k++){
+                if( value == a[k] )
+                    break;
+            }
+            if(k==ElementCount){
+                System.out.println("Element is not present in Array");
+            }
+            else{
+                for(int l=k; l<ElementCount; l++){
+                a[k] = a[k+1];
+                }
+                ElementCount--;
+            }
+    }
+
 }
+
