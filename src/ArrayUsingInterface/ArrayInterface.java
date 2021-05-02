@@ -43,6 +43,9 @@ public class ArrayInterface {
                 ElementCount--;
             }
     }
-
+    public void insert(long value){
+        a[ElementCount]= value;
+        ElementCount++;
+    }
 }
 
