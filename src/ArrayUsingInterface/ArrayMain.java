@@ -10,7 +10,11 @@ public class ArrayMain {
         myobj.insert(55);
         myobj.insert(66);
         myobj.insert(77);
-        myobj.traverse();
+        myobj.display();
+        myobj.find(55);
+        myobj.delete(22);
+        myobj.delete(44);
+        myobj.display();
 
 
     }
