@@ -14,6 +14,7 @@ public class ObjectClassApp {
         a.insert("Monty","Chaudhary", 29);
         a.display();
         a.search("Garg");
+        a.delete("Garg");
         a.display();
 
     }
