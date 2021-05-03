@@ -33,7 +33,7 @@ public class ObjectClassArray {
         }
         else{
             for(int l=k; l<Nelements; l++) {
-                arr[k] = arr[k + 1];
+                arr[l] = arr[l + 1];
             }
             Nelements--;
         }

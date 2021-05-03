@@ -9,5 +9,7 @@ public class ObjectClassApp {
         a.insert("Rajnish","Tiwari", 24);
         a.display();
         a.search("Garg");
+        a.delete("Saxena");
+        a.display();
     }
 }
