@@ -21,6 +21,24 @@ public class ObjectClassArray {
             System.out.println("Object is not present in array");
         }
     }
+    public  void delete(String searchname){
+        int k;
+        for (k = 0; k < Nelements ; k++) {
+            if (arr[k].getLastName().equals(searchname)) {
+                break;
+            }
+        }
+        if(k==Nelements){
+            System.out.println("Element not found");
+        }
+        else{
+            for(int l=k; l<Nelements; l++) {
+                arr[k] = arr[k + 1];
+            }
+            Nelements--;
+        }
+
+    }
     public void display(){
         for (int i = 0; i < Nelements ; i++) {
             arr[i].display();
