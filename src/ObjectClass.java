@@ -7,4 +7,10 @@ public class ObjectClass {
         LastName = Lname;
         age = Age;
     }
+    protected void display(){
+        System.out.println("Firstname is "+FirstName+" and lastname is "+LastName+" and age is"+age);
+    }
+    public String getLastName(){
+        return  LastName;
+    }
 }
