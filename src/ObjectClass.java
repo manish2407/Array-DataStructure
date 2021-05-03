@@ -1,5 +1,10 @@
 public class ObjectClass {
-    public static void main(String[] args) {
-
+    private String FirstName;
+    private String LastName;
+    private int age;
+    public ObjectClass(String Fname,String Lname, int Age){
+        FirstName = Fname;
+        LastName = Lname;
+        age = Age;
     }
 }
