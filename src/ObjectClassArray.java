@@ -12,7 +12,6 @@ public class ObjectClassArray {
     public void display(){
         for (int i = 0; i < Nelements ; i++) {
             arr[i].display();
-
         }
     }
 }
