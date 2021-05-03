@@ -32,7 +32,7 @@ public class ObjectClassArray {
             System.out.println("Element not found");
         }
         else{
-            for(int l=k; l<Nelements; l++) {
+            for(int l=k; l<Nelements - 1; l++) {
                 arr[l] = arr[l + 1];
             }
             Nelements--;
