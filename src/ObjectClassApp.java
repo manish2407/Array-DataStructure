@@ -8,5 +8,6 @@ public class ObjectClassApp {
         a.insert("Aman","Garg", 23);
         a.insert("Rajnish","Tiwari", 24);
         a.display();
+        a.search("Garg");
     }
 }
