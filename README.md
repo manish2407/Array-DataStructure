@@ -9,4 +9,27 @@ We have to declare the size of array at the time when we instatiate the array, s
 
 2-deletion
 
-3-searching.
+3-searching
+
+4- Traversal
+
+5- Display
+
+We can search an element in array  using two approach one is linear Search and other is Binary Search.
+
+We also have two type of Arrays in Data Structure 1- Unordered Array and 2 Ordered Array.
+
+Running time complexity of All possible operations on an array is-
+
+Insertion(unordered array)------------O(1)
+
+Insertion(Ordered Array)--------------O(n)
+
+Deletion(unordered array)------------O(n)
+
+Deletion(unordered array)------------O(n)
+
+Linear Search------------O(n)
+
+Binary Search------------O(log n)
+
